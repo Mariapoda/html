@@ -10,4 +10,4 @@ function hora() {
    relogio.innerHTML = `${horas}:${minutos}:${segundos}`
   }
   
-  hora();
+setInterval(hora,1000)
