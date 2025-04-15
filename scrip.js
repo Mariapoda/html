@@ -3,9 +3,9 @@ function hora() {
    let relogio = document.getElementById('relogio')
 
    let tempo = new Date();
-   let horas = (tempo.getHours()).padStart(2,'0');
-   let minutos = (tempo.getMinutes()).padStart(2,'0');
-   let segundos = (tempo.getSeconds()).padStart(2,'0');
+   let horas = String (tempo.getHours()).padStart(2,'0');
+   let minutos = String (tempo.getMinutes()).padStart(2,'0');
+   let segundos = String (tempo.getSeconds()).padStart(2,'0');
 
    relogio.innerHTML = `${horas}:${minutos}:${segundos}`
   }
